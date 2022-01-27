@@ -24,5 +24,5 @@ resource "hcp_hvn" "hvn1" {
   hvn_id         = "main-hvn"
   cloud_provider = "aws"
   region         = "us-west-2"
-  cidr_block     = "172.25.17.0/20"
+  cidr_block     = "172.26.16.0/20"
 }
