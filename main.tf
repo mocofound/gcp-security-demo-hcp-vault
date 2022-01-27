@@ -14,6 +14,7 @@ provider "hcp" {
 resource "hcp_vault_cluster" "example_vault_cluster" {
   hvn_id     = hcp_hvn.hvn1.hvn_id
   cluster_id = "hcp-tf-example-vault-cluster"
+  public_endpoint = true
 }
 
 resource "hcp_vault_cluster_admin_token" "example_vault_admin_token" {
