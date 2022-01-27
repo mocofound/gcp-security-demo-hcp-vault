@@ -3,5 +3,6 @@ output "VAULT_ADDR" {
 }
 
 output "HCP_VAULT_ADMIN_TOKEN" {
+    sensitive = true
     value = hcp_vault_cluster_admin_token.example_vault_admin_token
 }
